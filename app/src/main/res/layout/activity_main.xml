@@ -24,6 +24,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="0"
+        android:onClick="click"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
@@ -36,6 +38,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="4"
+        android:onClick="click"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button9" />
 
@@ -48,6 +51,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="7"
+        android:onClick="click"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonMemoryPlus" />
 
@@ -58,6 +62,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text=","
+        android:onClick="click"
         app:layout_constraintStart_toEndOf="@+id/buttonPlus"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
@@ -70,6 +75,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="8"
+        android:onClick="click"
         app:layout_constraintStart_toEndOf="@+id/button7"
         app:layout_constraintTop_toBottomOf="@+id/buttonMemoryMinus" />
 
@@ -82,6 +88,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="+"
+        android:onClick="click"
         app:layout_constraintStart_toEndOf="@+id/button0"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
@@ -94,6 +101,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="9"
+        android:onClick="click"
         app:layout_constraintStart_toEndOf="@+id/button8"
         app:layout_constraintTop_toBottomOf="@+id/buttonMemoryClear" />
 
@@ -106,6 +114,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="-"
+        android:onClick="click"
         app:layout_constraintStart_toEndOf="@+id/buttonComma"
         app:layout_constraintTop_toBottomOf="@+id/buttonMultiplied" />
 
@@ -118,6 +127,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="="
+        android:onClick="click"
         app:layout_constraintStart_toEndOf="@+id/buttonPlus"
         app:layout_constraintTop_toBottomOf="@+id/buttonMinus" />
 
@@ -130,6 +140,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="/"
+        android:onClick="click"
         app:layout_constraintStart_toEndOf="@+id/button6"
         app:layout_constraintTop_toBottomOf="@+id/buttonClear" />
 
@@ -142,6 +153,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="*"
+        android:onClick="click"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/buttonDivided" />
 
@@ -154,6 +166,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="C"
+        android:onClick="click"
         app:layout_constraintBottom_toBottomOf="@+id/button9"
         app:layout_constraintStart_toEndOf="@+id/buttonMemoryClear"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -168,6 +181,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="M+"
+        android:onClick="click"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -180,6 +194,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="M-"
+        android:onClick="click"
         app:layout_constraintStart_toEndOf="@+id/buttonMemoryPlus"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -192,6 +207,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="MC"
+        android:onClick="click"
         app:layout_constraintStart_toEndOf="@+id/buttonMemoryMinus"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -221,6 +237,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="2"
+        android:onClick="click"
         app:layout_constraintStart_toEndOf="@+id/button1"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
 
@@ -233,6 +250,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="3"
+        android:onClick="click"
         app:layout_constraintStart_toEndOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
 
@@ -245,6 +263,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="1"
+        android:onClick="click"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
@@ -258,6 +277,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="5"
+        android:onClick="click"
         app:layout_constraintStart_toEndOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/button8" />
 
@@ -270,6 +290,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="6"
+        android:onClick="click"
         app:layout_constraintStart_toEndOf="@+id/button5"
         app:layout_constraintTop_toBottomOf="@+id/button9" />
 
