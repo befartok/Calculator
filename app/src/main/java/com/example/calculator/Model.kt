@@ -1,9 +1,14 @@
 package com.example.calculator
 
-class Model {
-    private val text = StringBuilder()
+class Model () {
+    private var text = StringBuilder()
+    var status: String
 
-    //var text: String =" "
+    init {
+        text.append("0")
+        status = "inputArg1"
+    }
+
     fun click(id: Any) {
 
         when (id) {
@@ -34,10 +39,8 @@ class Model {
     }
 
     private fun clickNum(btnValue: String) {
-
-        if (text.equals("0")){
+        if (text.get(text.lastIndex).toString().equals("0")and (text.length==1)){
             text.setLength(0)
-                //todo переделать
         }
         //text = btnValue
         text.append(btnValue)
