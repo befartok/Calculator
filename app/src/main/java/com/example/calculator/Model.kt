@@ -2,11 +2,20 @@ package com.example.calculator
 
 class Model () {
     private var text = StringBuilder()
-    var status: String
+
+    private var status: String
+    private var oper: String
+    private var arg1: Int
+    private var arg2: Int
+
+
 
     init {
         text.append("0")
         status = "inputArg1"
+        oper=""
+        arg1=0
+        arg2=0
     }
 
     fun click(id: Any) {
@@ -23,9 +32,9 @@ class Model () {
             R.id.button9 -> clickNum("9")
             R.id.button0 -> clickNum("0")
             R.id.buttonComma -> clickNum("0")
-            R.id.buttonPlus -> clickNum("0")
+            R.id.buttonPlus -> clickOper("+")
             R.id.buttonMinus -> clickNum("0")
-            R.id.buttonEquals -> clickNum("0")
+            R.id.buttonEquals -> clickEq()
             R.id.buttonDivided -> clickNum("0")
             R.id.buttonMultiplied -> clickNum("0")
             R.id.buttonClear -> clear()
@@ -38,12 +47,55 @@ class Model () {
 
     }
 
+    private fun clickPlus() {
+        if (status=="inputArg2"){
+            oper="+"
+        }
+        if (status=="inputOper"){
+
+        }
+    }
+
     private fun clickNum(btnValue: String) {
         if (text.get(text.lastIndex).toString().equals("0")and (text.length==1)){
             text.setLength(0)
         }
-        //text = btnValue
         text.append(btnValue)
+
+        // TODO: 09.12.2020 if else 
+        if (status=="inputArg1"){
+            arg1=text.toString().toInt()
+        }
+        if (status=="inputArg2"){
+            arg2=text.toString().toInt()
+        }
+        if (status=="inputOper"){
+            var buf=text.get(text.lastIndex)
+            text.setLength(0)
+            text.append(buf)
+            arg2=text.toString().toInt()
+            status="inputArg2"
+        }
+
+    }
+
+    private fun clickOper(btnValue: String){
+        oper=btnValue
+
+
+/*        if (status=="inputArg2"){
+            oper=btnValue
+        }
+        if (status=="inputOper"){
+
+        }*/
+        status="inputOper"
+    }
+    private fun clickEq(){
+        if (oper=="+"){
+            text.clear()
+            text.append((arg1.toInt()+arg2.toInt()).toString())
+        }
     }
 
     fun showText(): StringBuilder {
@@ -53,6 +105,8 @@ class Model () {
     fun clear() {
         text.setLength(0)
         text.append("0")
+        status = "inputArg1"
+
     }
 
 
